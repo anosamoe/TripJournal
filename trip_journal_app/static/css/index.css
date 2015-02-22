@@ -1,5 +1,4 @@
 html {
-    background: url("../images/cover1.jpg") no-repeat center center fixed #619C7E;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11,9 +10,9 @@ html {
     margin-left: auto;
     width: 80%;
     text-align: center;
-    color: white;
+    color: #9F9F9F;
     position: relative;
-    top: 160px;
+    top: 50px
 }
 
 #welcome h2, #welcome p {

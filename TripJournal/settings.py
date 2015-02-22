@@ -14,7 +14,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # local settings
-import TripJournal.local_settings as local_settings
+#import TripJournal.local_settings as local_settings
 
 from utils import client_key_and_secret
 
@@ -47,7 +47,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'debug_toolbar',
+    #'debug_toolbar',
     'trip_journal_app',
     'social.apps.django_app.default',
 )
@@ -75,8 +75,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'TripJournal',
-        'USER': local_settings.db_user,
-        'PASSWORD': local_settings.db_password,
+        'USER': 'ano_samoe',
+        'PASSWORD': 'po6livUvse',
     }
 }
 
@@ -121,7 +121,7 @@ AUTHENTICATION_BACKENDS = (
     'social.backends.vk.VKOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 )
-
+"""
 CLIENT_SECRETS_DIR = os.path.join(BASE_DIR, 'TripJournal', 'client_secrets')
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY, SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = (
@@ -135,3 +135,4 @@ SOCIAL_AUTH_VK_OAUTH2_KEY, SOCIAL_AUTH_VK_OAUTH2_SECRET = (
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+"""

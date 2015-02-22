@@ -19,18 +19,18 @@ body {
     z-index: 1;
 }
 
-#cite_name {
+#site_name {
     display: inline-block;
     margin: 8px 0px 0px 8px;
     border: white solid 2px;
 }
 
-#cite_name p {
+#site_name p {
     padding: 4px;
     margin: 0;
 }
 
-#cite_name p a {
+#site_name p a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -38,11 +38,11 @@ body {
     font-size: 1.25em;
 }
 
-#cite_name:hover {
+#site_name:hover {
     background-color: white;
 }
 
-#cite_name:hover a {
+#site_name:hover a {
     color: #31797d;
 }
 
