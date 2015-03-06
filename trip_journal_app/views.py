@@ -27,6 +27,7 @@ def home(request):
 
 @login_required
 @require_POST
+@csrf_exempt
 def save(request, story_id):
     """
     View for saving story contents. Responds only to ajax POST requests.
@@ -58,6 +59,7 @@ def save(request, story_id):
 
 @login_required
 @require_POST
+@csrf_exempt
 def publish(request, story_id):
     user = auth.get_user(request)
     story = get_object_or_404(Story, pk=int(story_id))
@@ -71,6 +73,7 @@ def publish(request, story_id):
 
 @login_required
 @require_POST
+@csrf_exempt
 def upload_img(request, story_id):
     # authorization part
     story = get_object_or_404(Story, pk=int(story_id))

@@ -272,7 +272,7 @@ window.onload = function() {
             i;
 
         for (i = 0; i < arr_1.length; i++) {
-            arr_1[i].style.background = "#80B098";
+            arr_1[i].style.background = "#FFF";
         }
         for (i = 0; i < arr_2.length; i++) {
             arr_2[i].style.display = 'none';
@@ -350,7 +350,7 @@ window.onload = function() {
 
     text.onclick = function() {
         clear();
-        this.style.background = '#8ed41f';
+        this.style.background = '#FFF';
         text_panel.style.display = 'block';
         document.getElementById('textarea').focus();
     };
@@ -358,13 +358,13 @@ window.onload = function() {
 
     photo.onclick = function() {
         clear();
-        this.style.background = '#8ed41f';
+        this.style.background = '#FFF';
         photo_panel.style.display = 'block';
     };
 
     video.onclick = function() {
         clear();
-        this.style.background = '#8ed41f';
+        this.style.background = '#FFF';
         video_panel.style.display = 'block';
     };
 

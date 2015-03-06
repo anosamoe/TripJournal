@@ -33,7 +33,9 @@ h2, h2 a {
 hr {
   border:0px solid;
   border-top:1px #CCCCCC solid;
-  margin:0px;
+  margin:0px auto;
+  width: 100%;
+  margin-top: 15px;
 }
 
 a {
@@ -75,18 +77,22 @@ p {
     margin: 30px 0px 0px 0px;
     border: #9f9f9f solid 2px;
 }
+
 #site_name p {
     padding: 4px;
 }
+
 #site_name a {
     text-decoration: none;
     color: #9f9f9f;
     font-weight: 500;
     font-size: 1.25em;
 }
+
 #site_name:hover {
     background-color: #9f9f9f;
 }
+
 #site_name:hover a {
     color: #fff;
 }
@@ -99,14 +105,17 @@ p {
     margin: 40px 0px 0px 0px;
     font-size:0.813em;
 }
+
 .login-text a {
     text-decoration: none;
     color: #9f9f9f;
     transition: 0.5s;
 }
+
 .login-text a:hover {
     color: #0088cc;
 }
+
 .left_menu {
     display: block;
     position: relative;
@@ -199,8 +208,7 @@ ul.menu_btns li {
     background: #FFEA99 url('../images/info.svg') no-repeat 5px 2px;
     background-size: 23px 23px;
 }
-
 #content {
-    width: 100%;
-    background: url('../img/1200-500-9.jpg') no-repeat top center;
+    width: 80%;
+    margin: 0 auto;
 }

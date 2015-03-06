@@ -6,18 +6,38 @@ html {
 }
 
 #welcome {
+    display:block;
+    height: 300px;
     margin-right: auto;
-    margin-left: auto;
-    width: 80%;
+    margin-left: auto; 
+    width: 100%;
     text-align: center;
-    color: #9F9F9F;
+    color: #FAEBD7;
     position: relative;
-    top: 50px
+    top: 0px;
+
+    /*background: url('../img/1200-500-3.jpg') no-repeat top center;
+    opacity: 0.5;*/
+}
+
+
+#welcome::after {
+    content: '';
+    background: url('../img/1200-500-3.jpg') no-repeat top center;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;   
+    width: 100%;
+    height: 100%;
 }
 
 #welcome h2, #welcome p {
     font-weight: 300;
     margin: 15px;
+    color: #000;
+    topacity: 0.6;
 }
 #welcome h2 {
     font-size: 3.5em;
@@ -30,56 +50,76 @@ html {
 
 #stories{
     position: relative;
-    top: 170px;
+    top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: left;
 }
 
 .story_list_container {
     display: inline-block;
-    width: 31%;
+    width: 100%;
     background-color: white;
     margin: 8px;
     vertical-align: top;
 }
 
-.story_img_container img {
+#stories hr {
     width: 100%;
+    margin-top: 15px;
 }
+
+.story_img_container img {
+    width: 30%;
+    float: left;
+    margin: 10px 10px 10px 0;
+}   
 
 .story_text_container, .story_name_container, .story_username_container,
 .story_datepublish_container {
     padding: 5px;
-    margin: 10px 8px 0px 8px;
 }
 
 .story_name_container {
-    margin-top: 10px;
+    margin-left: 60%;
+    text-transform: uppercase;
 }
 
 .story_name_container a {
     text-decoration: none;
     font-size: 1.3em;
-    color: #AE3C3C;
-}
-
-.story_text_container p {
-    margin: 0;
-    color: #333;
-    padding-bottom: 12px;
+    color: #9F9F9F;
 }
 
 .story_text_container {
-    border-bottom: 1px solid #999;
+    width: 65%;
+    float: left;
+    text-align: justify;
+}
+
+.story_text_container p {
+    font-family: "Asap", sans-serif;
+    padding: 0px 0px 15px 0px;
+    margin: 0px;
+}
+
+.story_text_container h5 { 
+    font-size: 13px;
+    color: #9f9f9f;
+    text-transform: uppercase;
+    padding: 5px 0px 10px 0px;
 }
 
 .story_username_container, .story_datepublish_container {
     display: inline-block;
-    margin-top: 15px;
-    margin-bottom: 17px;
-    color: #333;
 }
 
 .story_datepublish_container {
-    float: right;
+    font-size: 13px;
+    color: #9f9f9f;
+    text-transform: uppercase;
+    padding: 5px 0px 10px 0px;
 }
 
 .login_form {
